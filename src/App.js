@@ -1,15 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import * as React from "react";
+import { Container, Grid, Typography } from "@material-ui/core";
+import ImageArea from "./Components/ImageArea.tsx";
 
-import App from "./App.tsx";
+function App() {
+  return (
+    <>
+      <Container>
+        <Typography align="center">
+          <h3>Teste de Cógido para Colméia Visão Computacional </h3>
+        </Typography>
+        <Grid justifyContent="center" container={true}>
+          <ImageArea />
+        </Grid>
+      </Container>
+    </>
+  );
+}
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+export default App;
