@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Button, TextField, Box } from "@material-ui/core";
-import { Convert } from "mongo-image-converter";
+
 import { useState } from "react";
 import Webcam from "react-webcam";
 import axios from "axios";
